@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="portifolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="images/SB-Logo/SB-aba.png" type="image/x-icon">
+    <title>Portifólio Samuel Bueno</title>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500"></div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Inicio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">Sobre</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Habilidades</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#services">Projetos</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contato</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Inicio</a>
+                <a href="#about">Sobre</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#services">Projetos</a>
+                <a href="#contact">Contato</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Principal -->
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="images/Foto samuel.jpeg" alt="Foto de Samuel Bueno">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Olá, sou o <span>Samuel Bueno</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    Eu sou<span class="typewriter-text"></span><label for="">|</label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    Sou um profissional de tecnologia especializado em desenvolvimento backend e mobile. Domino Kotlin, PHP, HTML, CSS, JavaScript e C#, e utilizo frameworks como Firebase e React Script. Tenho experiência com bancos de dados MySQL e possuo habilidades em design, gestão de problemas e liderança de equipes.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/BuenoSamu" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/samuel-bueno-35172b328/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="btn">
+                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800"  onclick="window.location.href='mailto:samuelbueno467@gmail.com'">Contate-me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>Sobre mim</span></div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="images/SB-Logo/SB-Logo.png" alt="Foto de Samuel Bueno">
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Jornada</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                        Formado pela ETEC João Belarmino no curso técnico em Desenvolvimento de Sistemas (2022-2024), possuo sólida base em programação e desenvolvimento de software. Tenho familiaridade com projetos mobile, adquirida por meio de experiências práticas durante minha formação e projetos pessoais. Busco novas oportunidades no mercado de trabalho para aplicar e expandir meus conhecimentos, contribuindo com soluções inovadoras e eficientes no desenvolvimento de sistemas. 
+                    </p>
+                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+                        <button  onclick="baixarPDF()" >Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="waveazul"><img src="images/wave.svg" alt=""></div>  
+    </section>
+
+    <!-- Habilidades -->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Minhas habilidades</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">Skill</div>
+                    <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                        Tenho experiência sólida em desenvolvimento backend, com habilidades em Kotlin, JavaScript, HTML e CSS. Utilizo Kotlin principalmente para o desenvolvimento de APIs e sistemas backend eficientes e escaláveis. Com JavaScript, trabalho com Node.js para criação de servidores e aplicações web. Embora minha experiência também inclua front-end com HTML e CSS, meu foco principal é a implementação de soluções robustas no backend, incluindo integração com bancos de dados e construção de sistemas que atendem a diversas necessidades empresariais.
+                    </p>
+                    <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="num">1</div>
+                        <div class="exp">Ano (s) de <br> Experiência</div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">Kotlin</div>
+                        <div class="por" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" width="50%" /></div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">HTML</div>
+                        <div class="por" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50%" /></div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">CSS</div>
+                        <div class="por" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50%" /></div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">JavaScript</div>
+                        <div class="por" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" width="50%" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+<section class="services" id="services">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1200">
+            <span>Meus Projetos</span>
+        </div>
+        <div class="subtitle" data-aos="fade-up" data-aos-duration="1200">
+            <a href="Lista-projetos.html" data-aos="fade-up" data-aos-duration="1200">Ver todos os projetos</a>
+        </div>
+        <div class="boxes">
+            <div class="box" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200" onclick="window.location.href='vihva.html'">
+                <div class="icon"><i class="fas fa-tablet-alt"></i></div>
+                <div class="topi">Vihva</div>
+                <p>
+                    O Vihva foi criado com o objetivo de oferecer uma solução moderna e eficiente para o gerenciamento da saúde. Com uma interface intuitiva e recursos avançados, o aplicativo reúne ferramentas indispensáveis para simplificar e otimizar o cuidado com a saúde, garantindo praticidade e eficiência na rotina de seus usuários.
+                </p>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200" onclick="window.location.href='vihva-medical-center.html'">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <div class="topi">Vihva Medical Center</div>
+                <p>
+                    O Vihva Medical Center é uma plataforma inovadora voltada para o apoio aos médicos no acompanhamento contínuo de pacientes com doenças crônicas. Por meio do Vihva, aplicativo android desenvolvido para o monitoramento diário da saúde, os profissionais de saúde podem oferecer um atendimento personalizado e eficiente.
+                </p>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" onclick="window.location.href='vihva-watch.html'">
+                <div class="icon"><i class="fas fa-clock"></i></div>
+                <div class="topi">Vihva Watch</div>
+                <p>
+                    O Vihva Watch foi criado com o objetivo de oferecer uma solução moderna e eficiente para o gerenciamento de corridas e caminhadas. Com uma interface intuitiva, o aplicativo reúne ferramentas indispensáveis para simplificar e otimizar o controle de seus percursos, garantindo praticidade e eficiência na rotina de seus usuários.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>Contate-me</span></div>
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Alguma Dúvida?</div>
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    Tem alguma dúvida ou quer saber mais sobre como posso ajudar no seu projeto ou empresa? Clique abaixo e entre em contato!
+                </p>
+                <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <button  onclick="window.location.href='mailto:samuelbueno467@gmail.com'">Contate-me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="text">
+            <span>© 2025 Samuel Bueno. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@font-face {
+    font-family: 'Peanut Butter';
+    src: url('fonts/Peanut Butter.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'CloudSoft-Bold 700';
+    src: url('fonts/CloudSoft-Bold\ 700.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CloudSoft-Bold 700', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/*Scroll customizado*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #87CEEB;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #87CEEB;
+}
+
+section {
+    display: flex; /* Define o layout flexível */
+    flex-direction: row; /* Garante o alinhamento horizontal */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 100px; /* Espaçamento controlado entre os containers */
+    margin: 0px;
+}
+
+.container-image {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente dentro do próprio container */
+    align-items: center; /* Centraliza verticalmente dentro do próprio container */
+    margin: 0; /* Remove margens adicionais */
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+.image img {
+    background-color: #FFFAF5;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: solid #ADD8E6;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column; /* Organiza o título e subtítulo verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    margin: 0; /* Remove margens adicionais */
+    margin-bottom: 100px;
+}
+
+.title {
+    margin: 0; /* Remove margens */
+}
+
+.title span{
+    font-family: 'Peanut Butter';
+    color: #6096a8;
+    font-size: 100px;
+    font-weight: 100;
+    position: relative;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.subtitle {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamento adicional */
+}
+
+.subtitle p {
+    font-family: 'CloudSoft-Bold 700';
+    font-size: 20px;
+    color: #555;
+    margin: 0;
+}
+
+.wave-top {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/*Segunda section*/
+
+.features {
+    background-color: #0099ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    gap: 100px; /* Igual ao espaçamento controlado do primeiro section */
+    margin: 0;
+}
+
+
+.content {
+    display: flex; /* Mantém o layout flexível */
+    flex-direction: row; /* Alinha imagens e texto horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 100px; /* Espaçamento igual ao primeiro section */
+}
+.title-fun {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.title-fun span{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    position: relative;
+    padding-bottom: 8px;
+    text-align: center;
+}
+.title-fun span::before,
+.title-fun span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #87CEEB;
+    left: 0;
+    bottom: 0;
+}
+.title-fun span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.images {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Alinha as imagens horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-bottom: 100px;
+}
+
+.images img {
+    width: 600px; /* Ajusta o tamanho das imagens para ser igual ao primeiro section */
+    height: 300px; /* Proporção igual à do primeiro section */
+    object-fit: cover; /* Mantém o ajuste dentro do container */
+    border-radius: 20px; /* Bordas arredondadas semelhantes ao primeiro section */
+    border: solid #ADD8E6; /* Borda semelhante ao primeiro section */
+}
+
+.title-ini {
+    display: flex;
+    flex-direction: column; /* Organiza o texto verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    max-width: 400px; /* Limita a largura do texto */
+    margin: 0;
+    gap: 10px;
+    font-size: 20px; /* Mesma fonte usada no primeiro section */
+    font-family: 'CloudSoft-Bold 700';
+    color: white;
+}
+
+.title-ini p{
+    margin-bottom: 100px;
+}
+
+.title-ini-inicio{
+    display: flex;
+    flex-direction: column; /* Organiza o texto verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    max-width: 400px; /* Limita a largura do texto */
+    margin: 0;
+    gap: 10px;
+    font-size: 20px; /* Mesma fonte usada no primeiro section */
+    font-family: 'CloudSoft-Bold 700';
+    color: white;
+    margin-bottom: 120px;
+}
+
+.waveazul {
+    width: 100%;
+    position: relative;
+}
+
+
+
+.waveazul img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.subtitle-projects-details {
+    font-family: 'Peanut Butter';
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    position: relative;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #0099ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    gap: 100px; /* Igual ao espaçamento controlado do primeiro section */
+    margin: 0;
+}
+
+.buttons{
+    margin: 16px ;
+    padding: 0;
+}
+
+.buttons button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #87CEEB;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin: 20px;
+
+}
+
+.buttons button:hover{
+    border-color: #87CEEB;
+    background-color: #fff;
+    color: #87CEEB;
+    
+}
+
