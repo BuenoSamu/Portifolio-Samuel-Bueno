@@ -42,19 +42,19 @@ body {
 }
 
 section {
-    display: flex; /* Define o layout flexível */
-    flex-direction: row; /* Garante o alinhamento horizontal */
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 100px; /* Espaçamento controlado entre os containers */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 100px; 
     margin: 0px;
 }
 
 .container-image {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente dentro do próprio container */
-    align-items: center; /* Centraliza verticalmente dentro do próprio container */
-    margin: 0; /* Remove margens adicionais */
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
 }
 
 .image {
@@ -75,15 +75,15 @@ section {
 
 .container-content {
     display: flex;
-    flex-direction: column; /* Organiza o título e subtítulo verticalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: flex-start; /* Alinha o texto à esquerda */
-    margin: 0; /* Remove margens adicionais */
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start; 
+    margin: 0; 
     margin-bottom: 100px;
 }
 
 .title {
-    margin: 0; /* Remove margens */
+    margin: 0; 
 }
 
 .title span{
@@ -97,8 +97,8 @@ section {
 }
 
 .subtitle {
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove espaçamento adicional */
+    margin: 0; 
+    padding: 0; 
 }
 
 .subtitle p {
@@ -122,18 +122,18 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centraliza verticalmente */
-    gap: 100px; /* Igual ao espaçamento controlado do primeiro section */
+    justify-content: center; 
+    gap: 100px; 
     margin: 0;
 }
 
 
 .content {
-    display: flex; /* Mantém o layout flexível */
-    flex-direction: row; /* Alinha imagens e texto horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 100px; /* Espaçamento igual ao primeiro section */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 100px; 
 }
 .title-fun {
     text-align: center; 
@@ -167,52 +167,52 @@ section {
 
 
 .images {
-    display: flex; /* Layout flexível */
-    flex-direction: row; /* Alinha as imagens horizontalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaçamento entre as imagens */
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
     margin-bottom: 100px;
 }
 
 .images img {
-    width: 320px; /* Ajusta o tamanho das imagens para ser igual ao primeiro section */
-    height: 320px; /* Proporção igual à do primeiro section */
-    object-fit: cover; /* Mantém o ajuste dentro do container */
-    border-radius: 100%; /* Bordas arredondadas semelhantes ao primeiro section */
-    border: solid #ADD8E6; /* Borda semelhante ao primeiro section */
+    width: 320px; 
+    height: 320px; 
+    object-fit: cover;
+    border-radius: 100%; 
+    border: solid #ADD8E6; 
     background-color: #FFFAF5;
 }
 
 .images-inicio {
-    display: flex; /* Layout flexível */
-    flex-direction: row; /* Alinha as imagens horizontalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaçamento entre as imagens */
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
     margin-bottom: 100px;
     margin-top: 30px;
 }
 
 .images-inicio img {
-    width: 320px; /* Ajusta o tamanho das imagens para ser igual ao primeiro section */
-    height: 320px; /* Proporção igual à do primeiro section */
-    object-fit: cover; /* Mantém o ajuste dentro do container */
-    border-radius: 100%; /* Bordas arredondadas semelhantes ao primeiro section */
-    border: solid #ADD8E6; /* Borda semelhante ao primeiro section */
+    width: 320px;
+    height: 320px; 
+    object-fit: cover; 
+    border-radius: 100%; 
+    border: solid #ADD8E6; 
     background-color: #FFFAF5;
 }
 
 
 .title-ini {
     display: flex;
-    flex-direction: column; /* Organiza o texto verticalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: flex-start; /* Alinha o texto à esquerda */
-    max-width: 400px; /* Limita a largura do texto */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start;
+    max-width: 400px; 
     margin: 0;
     gap: 10px;
-    font-size: 20px; /* Mesma fonte usada no primeiro section */
+    font-size: 20px; 
     font-family: 'CloudSoft-Bold 700';
     color: white;
 }
@@ -224,13 +224,13 @@ section {
 
 .title-ini-inicio{
     display: flex;
-    flex-direction: column; /* Organiza o texto verticalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: flex-start; /* Alinha o texto à esquerda */
-    max-width: 400px; /* Limita a largura do texto */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    max-width: 400px; 
     margin: 0;
     gap: 10px;
-    font-size: 20px; /* Mesma fonte usada no primeiro section */
+    font-size: 20px; 
     font-family: 'CloudSoft-Bold 700';
     color: white;
     margin-bottom: 120px;
@@ -249,20 +249,20 @@ section {
 }
 
 .images-sos{
-    display: flex; /* Layout flexível */
-    flex-direction: row; /* Alinha as imagens horizontalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaçamento entre as imagens */
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
     margin-bottom: 100px;
 }
 
 .images-sos img{
-    width: 250px; /* Ajusta o tamanho das imagens para ser igual ao primeiro section */
-    height: 460px; /* Proporção igual à do primeiro section */
-    object-fit: cover; /* Mantém o ajuste dentro do container */
-    border-radius: 20px; /* Bordas arredondadas semelhantes ao primeiro section */
-    border: solid #ADD8E6; /* Borda semelhante ao primeiro section */
+    width: 250px;
+    height: 460px;
+    object-fit: cover; 
+    border-radius: 20px; 
+    border: solid #ADD8E6; 
 }
 
 .subtitle-projects-details {
@@ -280,8 +280,8 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; /* Centraliza verticalmente */
-    gap: 100px; /* Igual ao espaçamento controlado do primeiro section */
+    justify-content: center; 
+    gap: 100px; 
     margin: 0;
 }
 
