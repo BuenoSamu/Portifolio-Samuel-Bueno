@@ -272,3 +272,84 @@ section {
     
 }
 
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .container-content {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .title span {
+        font-size: 40px;
+    }
+
+    .subtitle p {
+        font-size: 12px;
+    }
+
+    .images, .images-sos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .images img, .images-sos img {
+        width: 250px;
+        height: auto;
+    }
+
+   .subtitle-projects-details {
+    font-size: 40px;
+   }
+
+    .title-ini, .title-ini-inicio {
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .buttons button {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        flex-direction: column;
+    }
+
+    .container-content {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .title span {
+        font-size: 22px;
+    }
+
+    .images img, .images-sos img {
+        width: 130px;
+        height: auto;
+    }
+
+    .title-ini, .title-ini-inicio {
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .buttons button {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin: 8px;
+    }
+}
